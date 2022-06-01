@@ -6,72 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
     <title>Home Work</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <!-- header -->
     <header>
       <nav>
-        <a href="./index.html" class="logo"
+        <!-- Logo header -->
+        <a href="./index.html" class="logo header"
           ><span class="logo-web">Web</span>Studio</a
         >
-        <ul>
-          <li>
-            <a href="./index.html">Студия</a>
-          </li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
+        <!-- navigation link -->
+        <ul class="nav">
+          <li><a class="nav-item" href="./index.html">Студия</a></li>
+          <li><a class="nav-item" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="nav-item" href="#">Контакты</a></li>
         </ul>
+        <!-- contact header -->
       </nav>
-      <ul>
+      <ul class="contact header">
         <li>
-          <a href="malito:info@devstudio.com">info@devstudio.com</a>
+          <a class="contact-mail" href="malito:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <a class="contact-phone" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </header>
     <!-- main -->
     <main>
       <!-- Hero -->
-
-      <section>
-        <h1>Эффективные решения<br />для вашего бизнеса</h1>
-        <button type="button" id="orderServices">Заказать услугу</button>
-        <!-- <a href="#">Заказать услугу</a> -->
+      <section class="hero">
+        <h1 class="hero-title uppertext">
+          Эффективные решения<br />для вашего бизнеса
+        </h1>
+        <button type="button" id="orderServices" class="hero-btn">
+          Заказать услугу
+        </button>
       </section>
 
-      <!-- description -->
-      <section>
-        <h2>Our advantages</h2>
-        <ul>
+      <!-- advantages -->
+      <section class="section">
+        <h2 class="section-title">Наши преимущества</h2>
+        <ul class="list-description">
           <li>
-            <h3>Внимание к деталям</h3>
+            <h3 class="uppertext">Внимание к деталям</h3>
             <p>
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
-            <h3>Пунктуальность</h3>
+            <h3 class="uppertext">Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
-            <h3>Планирование</h3>
+            <h3 class="uppertext">Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
-            <h3>Современные технологии</h3>
+            <h3 class="uppertext">Современные технологии</h3>
             <p>
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
@@ -80,8 +84,8 @@
         </ul>
       </section>
       <!-- what we doing -->
-      <section>
-        <h2>Чем мы занимаемся</h2>
+      <section class="section">
+        <h2 class="section-title">Чем мы занимаемся</h2>
         <ul>
           <li>
             <img
@@ -104,10 +108,10 @@
           </li>
         </ul>
       </section>
-      <!-- about -->
-      <section>
-        <h2>Наша команда</h2>
-        <ul>
+      <!-- persons -->
+      <section class="section section-bg">
+        <h2 class="section-title">Наша команда</h2>
+        <ul class="list-description">
           <li>
             <img
               src="./image/img.jpg"
@@ -153,12 +157,19 @@
     </main>
     <!-- footer -->
     <footer>
-      <!-- <a href="/"> <img src="./image/logo.webp" alt="Logo" /></a> -->
-      <a href="/" class="logo"><span class="logo-web">Web</span>Studio</a>
-      <address>
-        г. Киев, пр-т Леси Украинки, 26<br />
-        <a href="malito:info@devstudio.com">info@devstudio.com </a><br />
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
+      <!-- logo footer -->
+      <a href="./" class="logo footer"
+        ><span class="logo-web">Web</span>Studio</a
+      >
+      <!-- contacts footer -->
+      <address class="contact footer">
+        <span class="contact-addres">
+          г. Киев, пр-т Леси Украинки, 26<br
+        /></span>
+        <a class="contact-mail" href="malito:info@devstudio.com"
+          >info@devstudio.com </a
+        ><br />
+        <a class="contact-phone" href="tel:+380961111111">+38 096 111 11 11</a>
       </address>
     </footer>
   </body>
